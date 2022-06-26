@@ -13,9 +13,10 @@
   "stack": "heroku-22",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node app.js",
+    "web": "node app.js"
   },
-  "author": "ibnulsyam",
+  "author": "Ibnulsyam",
   "license": "ISC",
   "description": ""
 }
