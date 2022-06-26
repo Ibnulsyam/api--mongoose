@@ -8,4 +8,3 @@ router.delete("/product/:id", contollerV2.destroy);
 router.put("/product/:id", contollerV2.update);
 
 module.exports = router;
-///

@@ -4,7 +4,6 @@ const cors = require("cors");
 const dotenv = require("dotenv").config();
 const port = process.env.DB_PORT || 5000;
 const connectDB = require("./config/mongoose");
-// const routerV1 = require("./mongodb/routes");
 const routerV2 = require("./mongoose/routes");
 
 connectDB();
