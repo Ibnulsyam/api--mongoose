@@ -17,7 +17,6 @@
   "scripts": {
     "start": "node app.js",
     "server": "nodemon app.js",
-    "serve": "",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=true "
   },
   "author": "Ibnulsyam",
