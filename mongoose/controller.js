@@ -1,9 +1,17 @@
 const Product = require("./model");
 
 const index = (req, res) => {
-  Product.find()
-    .then((result) => res.send(result))
-    .catch((err) => res.send(err));
+  const { name } = req.query;
+
+  if (name) {
+    Product.find({ name: { $regex: name } })
+      .then((result) => res.send(result))
+      .catch((err) => res.send(err));
+  } else {
+    Product.find()
+      .then((result) => res.send(result))
+      .catch((err) => res.send(err));
+  }
 };
 
 const view = (req, res) => {
