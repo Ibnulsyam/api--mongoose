@@ -1,14 +1,12 @@
 const express = require("express");
-
 const cors = require("cors");
-const dotenv = require("dotenv").config();
-const port = process.env.DB_PORT || 5000;
 const dbConnect = require("./config/mongoose");
+const dotenv = require("dotenv").config();
 const routerV2 = require("./mongoose/routes");
 
-dbConnect();
-
 const app = express();
+
+dbConnect();
 
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
